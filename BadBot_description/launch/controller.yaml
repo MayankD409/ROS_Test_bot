@@ -5,11 +5,15 @@ BadBot_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
-  Rev13_position_controller:
+  Rev7_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev13
+    joint: Rev7
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev14_position_controller:
+  Rev8_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev14
+    joint: Rev8
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev10_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev10
     pid: {p: 100.0, i: 0.01, d: 10.0}

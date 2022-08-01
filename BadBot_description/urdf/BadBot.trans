@@ -1,23 +1,34 @@
 <?xml version="1.0" ?>
 <robot name="BadBot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="Rev13_tran">
+<transmission name="Rev7_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="Rev13">
+  <joint name="Rev7">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="Rev13_actr">
+  <actuator name="Rev7_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="Rev14_tran">
+<transmission name="Rev8_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="Rev14">
+  <joint name="Rev8">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="Rev14_actr">
+  <actuator name="Rev8_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Rev10_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev10">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev10_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

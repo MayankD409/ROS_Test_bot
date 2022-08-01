@@ -1,0 +1,37 @@
+RegulatedPurePursuitController:  
+  min_global_plan_complete_size: 20
+  global_plan_prune_distance: 1.0
+
+  lookahead_time: 1.5
+  lookahead_dist: 0.6
+  use_velocity_scaled_lookahead_dist: true
+  min_lookahead_dist: 0.3
+  max_lookahead_dist: 0.9
+
+  use_rotate_to_heading: false
+  rotate_to_heading_min_angle: 0.785
+  rotate_to_heading_angular_vel: 1.8
+  max_angular_accel: 1.5
+
+  allow_reversing: true
+
+  desired_linear_vel: 0.5
+  max_angular_vel: 0.5
+  min_approach_linear_velocity: 0.05
+
+  use_regulated_linear_velocity_scaling: true
+  regulated_linear_scaling_min_radius: 0.9
+  regulated_linear_scaling_min_speed: 0.25
+
+  use_cost_regulated_linear_velocity_scaling: true
+  inflation_cost_scaling_factor: 3.0
+  cost_scaling_dist: 0.6
+  cost_scaling_gain: 1.0
+
+  max_allowed_time_to_collision_up_to_carrot: 1.0
+
+  goal_dist_tol: 0.1
+
+  control_frequency: 10
+
+  transform_tolerance: 0.5

@@ -1,0 +1,546 @@
+<?xml version="1.0" ?>
+
+
+<sdf version="1.7">
+  <world name="world">
+    <scene>
+      <ambient>0.8 0.8 0.8 1.0</ambient>
+      <background>0 0 0</background>
+      <grid>false</grid>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <gui>
+      <camera name="gui_camera">
+        <pose>18.758678766187817 -40.49960842138499 10 0 0.6 1.57</pose>
+      </camera>
+      <plugin name="toggle_charging" filename="libtoggle_charging.so" />
+      <plugin name="toggle_floors" filename="libtoggle_floors.so">
+        <floor name="L1" model_name="libr_L1">
+          <model name="OpenRobotics/Bookshelf" />
+          <model name="OpenRobotics/Bookshelf_2" />
+          <model name="OpenRobotics/Bookshelf_3" />
+          <model name="OpenRobotics/Bookshelf_4" />
+          <model name="OpenRobotics/Bookshelf_5" />
+          <model name="OpenRobotics/Bookshelf_6" />
+          <model name="OpenRobotics/Bookshelf_7" />
+          <model name="OpenRobotics/Bookshelf_8" />
+          <model name="OpenRobotics/Bookshelf_9" />
+          <model name="OpenRobotics/Bookshelf_10" />
+          <model name="OpenRobotics/Bookshelf_11" />
+          <model name="OpenRobotics/Bookshelf_12" />
+          <model name="OpenRobotics/Bookshelf_13" />
+          <model name="OpenRobotics/Bookshelf_14" />
+          <model name="OpenRobotics/Bookshelf_15" />
+          <model name="OpenRobotics/Bookshelf_16" />
+          <model name="OpenRobotics/Bookshelf_17" />
+          <model name="OpenRobotics/Bookshelf_18" />
+          <model name="OpenRobotics/Bookshelf_19" />
+          <model name="OpenRobotics/Bookshelf_20" />
+          <model name="OpenRobotics/Bookshelf_21" />
+          <model name="OpenRobotics/Bookshelf_22" />
+          <model name="OpenRobotics/Bookshelf_23" />
+          <model name="OpenRobotics/Bookshelf_24" />
+          <model name="OpenRobotics/Bookshelf_25" />
+          <model name="OpenRobotics/Bookshelf_26" />
+          <model name="OpenRobotics/Bookshelf_27" />
+          <model name="OpenRobotics/Bookshelf_28" />
+          <model name="OpenRobotics/Bookshelf_29" />
+          <model name="OpenRobotics/Bookshelf_30" />
+          <model name="OpenRobotics/Bookshelf_31" />
+          <model name="OpenRobotics/Bookshelf_32" />
+          <model name="OpenRobotics/Bookshelf_33" />
+          <model name="OpenRobotics/Bookshelf_34" />
+          <model name="OpenRobotics/Bookshelf_35" />
+          <model name="OpenRobotics/Bookshelf_36" />
+          <model name="OpenRobotics/Bookshelf_37" />
+          <model name="OpenRobotics/Bookshelf_38" />
+          <model name="OpenRobotics/Bookshelf_39" />
+          <model name="OpenRobotics/Bookshelf_40" />
+          <model name="OpenRobotics/Bookshelf_41" />
+          <model name="OpenRobotics/Bookshelf_42" />
+          <model name="OpenRobotics/Bookshelf_43" />
+          <model name="OpenRobotics/Bookshelf_44" />
+          <model name="OpenRobotics/Bookshelf_45" />
+          <model name="OpenRobotics/Bookshelf_46" />
+          <model name="OpenRobotics/Bookshelf_47" />
+          <model name="OpenRobotics/Bookshelf_48" />
+          <model name="OpenRobotics/Bookshelf_49" />
+          <model name="OpenRobotics/Bookshelf_50" />
+          <model name="OpenRobotics/Bookshelf_51" />
+          <model name="OpenRobotics/Bookshelf_52" />
+          <model name="OpenRobotics/Bookshelf_53" />
+          <model name="OpenRobotics/Bookshelf_54" />
+          <model name="OpenRobotics/Bookshelf_55" />
+          <model name="OpenRobotics/Bookshelf_56" />
+          <model name="OpenRobotics/Bookshelf_57" />
+          <model name="OpenRobotics/Bookshelf_58" />
+          <model name="OpenRobotics/Bookshelf_59" />
+          <model name="OpenRobotics/Bookshelf_60" />
+          <model name="OpenRobotics/Bookshelf_61" />
+          <model name="OpenRobotics/Bookshelf_62" />
+          <model name="OpenRobotics/Bookshelf_63" />
+          <model name="OpenRobotics/Bookshelf_64" />
+          <model name="OpenRobotics/Bookshelf_65" />
+          <model name="OpenRobotics/Bookshelf_66" />
+          <model name="OpenRobotics/Bookshelf_67" />
+          <model name="OpenRobotics/Bookshelf_68" />
+          <model name="OpenRobotics/Bookshelf_69" />
+          <model name="OpenRobotics/Bookshelf_70" />
+          <model name="OpenRobotics/Bookshelf_71" />
+          <model name="OpenRobotics/Bookshelf_72" />
+          <model name="OpenRobotics/Bookshelf_73" />
+        </floor>
+      </plugin>
+    </gui>
+    <include>
+      <name>OpenRobotics/Bookshelf</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.467041090443733 -15.898008054667084 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_2</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.510822227900935 -17.1345104671964 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_3</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.505506946037123 -18.310516579565203 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_4</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.557191068370784 -19.618425607659702 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_5</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.53998634023265 -20.75428735437286 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_6</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.547609573432066 -21.934070114381743 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_7</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.608805252785185 -23.06608527553556 0.0 0 0 0.0035</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_8</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.639368123502116 -24.351054666112546 0.0 0 0 -0.0078</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_9</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.608805252785185 -25.605461185972604 0.0 0 0 0.006</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_10</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.547609573432066 -26.89043057654959 0.0 0 0 -0.0045</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_11</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.547609573432066 -28.02244573770341 0.0 0 0 -0.0025</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_12</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.55927625263667 -20.608256978956504 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_13</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.670897171776762 -21.87336400046345 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_14</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.70810414482346 -23.324505887203877 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_15</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.782518090916852 -24.73844080089761 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_16</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.857001974929506 -26.003547822404556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_17</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.45231354367665 -20.608256978956504 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_18</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.52672748977004 -21.87336400046345 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_19</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.60114143586344 -23.324505887203877 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_20</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.67555538195683 -24.73844080089761 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_21</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.74996932805022 -26.003547822404556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_22</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.34535083471663 -20.608256978956504 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_23</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.41976478081002 -21.87336400046345 0.0 0 0 0.037</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_24</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.494178726903414 -23.324505887203877 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_25</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.56859267299681 -24.73844080089761 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_26</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.6430066190902 -26.003547822404556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_27</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.45130333482354 -17.12653754440068 0.0 0 0 -0.0129</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_28</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.377561137512355 -17.143672334619552 0.0 0 0 -0.0167</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_29</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.42689500100155 -18.265896187076873 0.0 0 0 -0.0059</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_30</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.318883223252623 -20.727151441699707 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_31</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.30601464610865 -21.893925748726097 0.0 0 0 -0.0173</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_32</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.276780595857677 -24.300069922971492 0.0 0 0 -0.006</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_33</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.21999100541798 -26.846369687415347 0.0 0 0 -0.0057</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_34</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.28426395321857 -23.04909036115521 0.0 0 0 0.001</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_35</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.23257983088491 -25.56063097972649 0.0 0 0 -0.0217</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_36</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.402319160930645 -14.532050553586197 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_37</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.38616350158142 -15.805759939162211 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_38</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.42525879844816 -13.24316463953061 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_39</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.45512228997248 -11.899027769259066 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_40</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.47008900469427 -10.569857613709312 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_41</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.477991989570732 -9.067381294231522 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_42</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.505967157275016 -7.686946643863669 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_43</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.21999100541798 -28.043916678916446 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_44</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.599991351171806 -7.686946643863669 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_45</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.55418201405604 -9.067381294231522 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_46</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.540544119800202 -10.571955751287133 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_47</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.529214176879968 -11.899027769259066 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_48</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.499350685355644 -13.24316463953061 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_49</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.342102612447178 -19.599752183217095 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_50</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.469417255912063 -14.532050553586197 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_51</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.45130333482354 -15.805759939162211 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_52</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.360426347293483 -18.267155069623563 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_53</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.41066940373307 -19.599752183217095 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_54</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.391786165532675 -20.724353924929275 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_55</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.362831866958743 -21.892526990340883 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_56</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.352411116988897 -23.05321669839159 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_57</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.299817801704844 -25.56063097972649 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_58</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.337584278105627 -24.30013986089075 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_59</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.28715903831866 -26.846369687415347 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_60</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.28715903831866 -28.043916678916446 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_61</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.547567265923206 -15.898008054667084 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_62</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.597992505710174 -17.1345104671964 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_63</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.576241812820093 -18.310516579565203 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_64</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.627855997234494 -19.618425607659702 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_65</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.610651269096362 -20.75428735437286 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_66</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.629744321054535 -21.934070114381743 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_67</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.690940000407654 -23.06608527553556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_68</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.752135679760773 -24.351054666112546 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_69</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.690940000407654 -25.605461185972604 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_70</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.629744321054535 -26.89043057654959 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_71</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.629744321054535 -28.02244573770341 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_72</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.591948490456822 -6.306302179738034 0.0 0 0 0.0001</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_73</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.522682319978323 -6.306302179738034 0.0 0 0 -0.0052</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>libr_L1</name>
+      <uri>model://libr_L1</uri>
+      <pose>0 0 0.0 0 0 0</pose>
+    </include>
+    <rmf_charger_waypoints name="charger_waypoints">
+      <rmf_vertex name="stop" x="19.537647310913588" y="-24.8993679531165" level="L1" />
+      <rmf_vertex name="start" x="19.808027306775482" y="-4.397696363113314" level="L1" />
+      <rmf_vertex name="start_2" x="12.619178523886575" y="-23.204842107348803" level="L1" />
+    </rmf_charger_waypoints>
+  </world>
+</sdf>

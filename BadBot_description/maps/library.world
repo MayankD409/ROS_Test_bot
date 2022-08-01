@@ -1,0 +1,1320 @@
+<?xml version="1.0" ?>
+
+
+<sdf version="1.7">
+  <world name="world">
+    <scene>
+      <ambient>0.8 0.8 0.8 1.0</ambient>
+      <background>0 0 0</background>
+      <grid>false</grid>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <gui>
+      <camera name="gui_camera">
+        <pose>18.758678766187817 -40.49960842138499 10 0 0.6 1.57</pose>
+      </camera>
+      <plugin name="toggle_charging" filename="libtoggle_charging.so" />
+      <plugin name="toggle_floors" filename="libtoggle_floors.so">
+        <floor name="L1" model_name="libr_L1">
+          <model name="OpenRobotics/Bookshelf" />
+          <model name="OpenRobotics/Bookshelf_2" />
+          <model name="OpenRobotics/Bookshelf_3" />
+          <model name="OpenRobotics/Bookshelf_4" />
+          <model name="OpenRobotics/Bookshelf_5" />
+          <model name="OpenRobotics/Bookshelf_6" />
+          <model name="OpenRobotics/Bookshelf_7" />
+          <model name="OpenRobotics/Bookshelf_8" />
+          <model name="OpenRobotics/Bookshelf_9" />
+          <model name="OpenRobotics/Bookshelf_10" />
+          <model name="OpenRobotics/Bookshelf_11" />
+          <model name="OpenRobotics/Bookshelf_12" />
+          <model name="OpenRobotics/Bookshelf_13" />
+          <model name="OpenRobotics/Bookshelf_14" />
+          <model name="OpenRobotics/Bookshelf_15" />
+          <model name="OpenRobotics/Bookshelf_16" />
+          <model name="OpenRobotics/Bookshelf_17" />
+          <model name="OpenRobotics/Bookshelf_18" />
+          <model name="OpenRobotics/Bookshelf_19" />
+          <model name="OpenRobotics/Bookshelf_20" />
+          <model name="OpenRobotics/Bookshelf_21" />
+          <model name="OpenRobotics/Bookshelf_22" />
+          <model name="OpenRobotics/Bookshelf_23" />
+          <model name="OpenRobotics/Bookshelf_24" />
+          <model name="OpenRobotics/Bookshelf_25" />
+          <model name="OpenRobotics/Bookshelf_26" />
+          <model name="OpenRobotics/Bookshelf_27" />
+          <model name="OpenRobotics/Bookshelf_28" />
+          <model name="OpenRobotics/Bookshelf_29" />
+          <model name="OpenRobotics/Bookshelf_30" />
+          <model name="OpenRobotics/Bookshelf_31" />
+          <model name="OpenRobotics/Bookshelf_32" />
+          <model name="OpenRobotics/Bookshelf_33" />
+          <model name="OpenRobotics/Bookshelf_34" />
+          <model name="OpenRobotics/Bookshelf_35" />
+          <model name="OpenRobotics/Bookshelf_36" />
+          <model name="OpenRobotics/Bookshelf_37" />
+          <model name="OpenRobotics/Bookshelf_38" />
+          <model name="OpenRobotics/Bookshelf_39" />
+          <model name="OpenRobotics/Bookshelf_40" />
+          <model name="OpenRobotics/Bookshelf_41" />
+          <model name="OpenRobotics/Bookshelf_42" />
+          <model name="OpenRobotics/Bookshelf_43" />
+          <model name="OpenRobotics/Bookshelf_44" />
+          <model name="OpenRobotics/Bookshelf_45" />
+          <model name="OpenRobotics/Bookshelf_46" />
+          <model name="OpenRobotics/Bookshelf_47" />
+          <model name="OpenRobotics/Bookshelf_48" />
+          <model name="OpenRobotics/Bookshelf_49" />
+          <model name="OpenRobotics/Bookshelf_50" />
+          <model name="OpenRobotics/Bookshelf_51" />
+          <model name="OpenRobotics/Bookshelf_52" />
+          <model name="OpenRobotics/Bookshelf_53" />
+          <model name="OpenRobotics/Bookshelf_54" />
+          <model name="OpenRobotics/Bookshelf_55" />
+          <model name="OpenRobotics/Bookshelf_56" />
+          <model name="OpenRobotics/Bookshelf_57" />
+          <model name="OpenRobotics/Bookshelf_58" />
+          <model name="OpenRobotics/Bookshelf_59" />
+          <model name="OpenRobotics/Bookshelf_60" />
+          <model name="OpenRobotics/Bookshelf_61" />
+          <model name="OpenRobotics/Bookshelf_62" />
+          <model name="OpenRobotics/Bookshelf_63" />
+          <model name="OpenRobotics/Bookshelf_64" />
+          <model name="OpenRobotics/Bookshelf_65" />
+          <model name="OpenRobotics/Bookshelf_66" />
+          <model name="OpenRobotics/Bookshelf_67" />
+          <model name="OpenRobotics/Bookshelf_68" />
+          <model name="OpenRobotics/Bookshelf_69" />
+          <model name="OpenRobotics/Bookshelf_70" />
+          <model name="OpenRobotics/Bookshelf_71" />
+          <model name="OpenRobotics/Bookshelf_72" />
+          <model name="OpenRobotics/Bookshelf_73" />
+          <model name="entry_door" />
+          <model name="store_door_2" />
+          <model name="store_door_1" />
+          <model name="back_door" />
+          <model name="balcony_2" />
+          <model name="office_door" />
+          <model name="hall_door" />
+          <model name="main_door" />
+          <model name="balcony_1" />
+          <model name="digital_library_door" />
+        </floor>
+      </plugin>
+    </gui>
+    <include>
+      <name>OpenRobotics/Bookshelf</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.467041090443733 -15.898008054667084 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_2</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.510822227900935 -17.1345104671964 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_3</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.505506946037123 -18.310516579565203 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_4</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.557191068370784 -19.618425607659702 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_5</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.53998634023265 -20.75428735437286 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_6</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.547609573432066 -21.934070114381743 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_7</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.608805252785185 -23.06608527553556 0.0 0 0 0.0035</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_8</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.639368123502116 -24.351054666112546 0.0 0 0 -0.0078</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_9</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.608805252785185 -25.605461185972604 0.0 0 0 0.006</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_10</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.547609573432066 -26.89043057654959 0.0 0 0 -0.0045</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_11</name>
+      <uri>model://Bookshelf</uri>
+      <pose>28.547609573432066 -28.02244573770341 0.0 0 0 -0.0025</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_12</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.55927625263667 -20.608256978956504 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_13</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.670897171776762 -21.87336400046345 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_14</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.70810414482346 -23.324505887203877 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_15</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.782518090916852 -24.73844080089761 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_16</name>
+      <uri>model://Bookshelf</uri>
+      <pose>31.857001974929506 -26.003547822404556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_17</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.45231354367665 -20.608256978956504 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_18</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.52672748977004 -21.87336400046345 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_19</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.60114143586344 -23.324505887203877 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_20</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.67555538195683 -24.73844080089761 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_21</name>
+      <uri>model://Bookshelf</uri>
+      <pose>32.74996932805022 -26.003547822404556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_22</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.34535083471663 -20.608256978956504 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_23</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.41976478081002 -21.87336400046345 0.0 0 0 0.037</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_24</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.494178726903414 -23.324505887203877 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_25</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.56859267299681 -24.73844080089761 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_26</name>
+      <uri>model://Bookshelf</uri>
+      <pose>33.6430066190902 -26.003547822404556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_27</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.45130333482354 -17.12653754440068 0.0 0 0 -0.0129</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_28</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.377561137512355 -17.143672334619552 0.0 0 0 -0.0167</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_29</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.42689500100155 -18.265896187076873 0.0 0 0 -0.0059</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_30</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.318883223252623 -20.727151441699707 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_31</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.30601464610865 -21.893925748726097 0.0 0 0 -0.0173</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_32</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.276780595857677 -24.300069922971492 0.0 0 0 -0.006</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_33</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.21999100541798 -26.846369687415347 0.0 0 0 -0.0057</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_34</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.28426395321857 -23.04909036115521 0.0 0 0 0.001</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_35</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.23257983088491 -25.56063097972649 0.0 0 0 -0.0217</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_36</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.402319160930645 -14.532050553586197 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_37</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.38616350158142 -15.805759939162211 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_38</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.42525879844816 -13.24316463953061 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_39</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.45512228997248 -11.899027769259066 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_40</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.47008900469427 -10.569857613709312 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_41</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.477991989570732 -9.067381294231522 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_42</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.505967157275016 -7.686946643863669 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_43</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.21999100541798 -28.043916678916446 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_44</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.599991351171806 -7.686946643863669 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_45</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.55418201405604 -9.067381294231522 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_46</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.540544119800202 -10.571955751287133 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_47</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.529214176879968 -11.899027769259066 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_48</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.499350685355644 -13.24316463953061 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_49</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.342102612447178 -19.599752183217095 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_50</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.469417255912063 -14.532050553586197 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_51</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.45130333482354 -15.805759939162211 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_52</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.360426347293483 -18.267155069623563 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_53</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.41066940373307 -19.599752183217095 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_54</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.391786165532675 -20.724353924929275 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_55</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.362831866958743 -21.892526990340883 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_56</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.352411116988897 -23.05321669839159 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_57</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.299817801704844 -25.56063097972649 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_58</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.337584278105627 -24.30013986089075 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_59</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.28715903831866 -26.846369687415347 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_60</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.28715903831866 -28.043916678916446 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_61</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.547567265923206 -15.898008054667084 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_62</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.597992505710174 -17.1345104671964 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_63</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.576241812820093 -18.310516579565203 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_64</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.627855997234494 -19.618425607659702 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_65</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.610651269096362 -20.75428735437286 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_66</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.629744321054535 -21.934070114381743 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_67</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.690940000407654 -23.06608527553556 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_68</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.752135679760773 -24.351054666112546 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_69</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.690940000407654 -25.605461185972604 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_70</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.629744321054535 -26.89043057654959 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_71</name>
+      <uri>model://Bookshelf</uri>
+      <pose>27.629744321054535 -28.02244573770341 0.0 0 0 0.0</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_72</name>
+      <uri>model://Bookshelf</uri>
+      <pose>23.591948490456822 -6.306302179738034 0.0 0 0 0.0001</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>OpenRobotics/Bookshelf_73</name>
+      <uri>model://Bookshelf</uri>
+      <pose>24.522682319978323 -6.306302179738034 0.0 0 0 -0.0052</pose>
+      <static>True</static>
+    </include>
+    <include>
+      <name>tinyRobot1</name>
+      <uri>model://TinyRobot</uri>
+      <pose>19.77508654680369 -4.375456104788409 0.0 0 0 -1.535111498780372</pose>
+    </include>
+    <include>
+      <name>tinyRobot2</name>
+      <uri>model://TinyRobot</uri>
+      <pose>13.37947364416973 -16.781673664526128 0.0 0 0 -3.1205838038274836</pose>
+    </include>
+    <model name="entry_door">
+      <pose>14.039827477829334 -24.3966192205109 0.0 0 0 3.110451014736988</pose>
+      <link name="right">
+        <pose>0.5227946468305896 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>1.0355892936611792 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>1.0355892936611792 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>24.635188271440253</iyy>
+            <izz>4.472271604773584</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.5227946468305896 0 0 0 0 0</pose>
+      </joint>
+      <link name="left">
+        <pose>-0.5227946468305896 0 1.11 0 0 0</pose>
+        <visual name="left_visual">
+          <geometry>
+            <box>
+              <size>1.0355892936611792 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="left_collision">
+          <geometry>
+            <box>
+              <size>1.0355892936611792 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>24.635188271440253</iyy>
+            <izz>4.472271604773584</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="left_joint" type="revolute">
+        <parent>world</parent>
+        <child>left</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>0</upper>
+          </limit>
+        </axis>
+        <pose>-0.5227946468305896 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="entry_door" type="DoubleSwingDoor" left_joint_name="left_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="store_door_2">
+      <pose>19.46214932707165 -31.427618119628388 0.0 0 0 -3.102625101354875</pose>
+      <link name="right">
+        <pose>0 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>1.3059017723701887 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>1.3059017723701887 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>27.27241432949834</iyy>
+            <izz>7.109497662831667</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.6579508861850943 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="store_door_2" type="SwingDoor" left_joint_name="empty_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="store_door_1">
+      <pose>25.593571739698284 -31.4454872579995 0.0 0 0 0.0</pose>
+      <link name="right">
+        <pose>0 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>1.2933630633425517 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>1.2933630633425517 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>27.136616723411795</iyy>
+            <izz>6.973700056745122</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.6516815316712758 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="store_door_1" type="SwingDoor" left_joint_name="empty_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="back_door">
+      <pose>37.35128994309109 -23.761373099865885 0.0 0 0 1.5628379969055912</pose>
+      <link name="right">
+        <pose>0.2965986235943562 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>0.5831972471887124 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>0.5831972471887124 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>21.58382928803539</iyy>
+            <izz>1.420912621368717</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.2965986235943562 0 0 0 0 0</pose>
+      </joint>
+      <link name="left">
+        <pose>-0.2965986235943562 0 1.11 0 0 0</pose>
+        <visual name="left_visual">
+          <geometry>
+            <box>
+              <size>0.5831972471887124 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="left_collision">
+          <geometry>
+            <box>
+              <size>0.5831972471887124 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>21.58382928803539</iyy>
+            <izz>1.420912621368717</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="left_joint" type="revolute">
+        <parent>world</parent>
+        <child>left</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>0</upper>
+          </limit>
+        </axis>
+        <pose>-0.2965986235943562 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="back_door" type="DoubleSwingDoor" left_joint_name="left_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="balcony_2">
+      <pose>30.16719693871191 -18.47626944821308 0.0 0 0 -1.5947476055071845</pose>
+      <link name="right">
+        <pose>0 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>0.9916584218044624 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>0.9916584218044624 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>24.264110106398828</iyy>
+            <izz>4.101193439732155</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.5008292109022312 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="balcony_2" type="SwingDoor" left_joint_name="empty_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="office_door">
+      <pose>18.376992571822505 -7.963690990378291 0.0 0 0 -0.016509382078071694</pose>
+      <link name="right">
+        <pose>0 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>1.0152197962291003 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>1.0152197962291003 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>24.46113014439774</iyy>
+            <izz>4.298213477731066</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.5126098981145502 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="office_door" type="SwingDoor" left_joint_name="empty_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="hall_door">
+      <pose>1.088199054736985 -14.341189971923725 0.0 0 0 0.9648284635337379</pose>
+      <link name="right">
+        <pose>0.5304365679172806 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>1.050873135834561 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>1.050873135834561 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>24.768059781744853</iyy>
+            <izz>4.6051431150781825</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.5304365679172806 0 0 0 0 0</pose>
+      </joint>
+      <link name="left">
+        <pose>-0.5304365679172806 0 1.11 0 0 0</pose>
+        <visual name="left_visual">
+          <geometry>
+            <box>
+              <size>1.050873135834561 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="left_collision">
+          <geometry>
+            <box>
+              <size>1.050873135834561 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>24.768059781744853</iyy>
+            <izz>4.6051431150781825</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="left_joint" type="revolute">
+        <parent>world</parent>
+        <child>left</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>0</upper>
+          </limit>
+        </axis>
+        <pose>-0.5304365679172806 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="hall_door" type="DoubleSwingDoor" left_joint_name="left_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="main_door">
+      <pose>18.841730045309912 -16.92305316831165 0.0 0 0 1.615982625841251</pose>
+      <link name="right">
+        <pose>0 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>2.7103544682846876 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>2.7103544682846876 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>50.77508893229489</iyy>
+            <izz>30.612172265628217</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>1.3601772341423437 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="main_door" type="SwingDoor" left_joint_name="empty_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="balcony_1">
+      <pose>22.53074547255447 -39.61297734510349 0.0 0 0 -0.0644068211087975</pose>
+      <link name="right">
+        <pose>0.3373981900200527 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>0.6647963800401054 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>0.6647963800401054 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>22.008142612143455</iyy>
+            <izz>1.8452259454767848</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.3373981900200527 0 0 0 0 0</pose>
+      </joint>
+      <link name="left">
+        <pose>-0.3373981900200527 0 1.11 0 0 0</pose>
+        <visual name="left_visual">
+          <geometry>
+            <box>
+              <size>0.6647963800401054 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="left_collision">
+          <geometry>
+            <box>
+              <size>0.6647963800401054 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>22.008142612143455</iyy>
+            <izz>1.8452259454767848</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="left_joint" type="revolute">
+        <parent>world</parent>
+        <child>left</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>0</upper>
+          </limit>
+        </axis>
+        <pose>-0.3373981900200527 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="balcony_1" type="DoubleSwingDoor" left_joint_name="left_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <model name="digital_library_door">
+      <pose>2.741916124616054 -17.956036235792304 0.0 0 0 3.048143923577788</pose>
+      <link name="right">
+        <pose>0 0 1.11 0 0 0</pose>
+        <visual name="right_visual">
+          <geometry>
+            <box>
+              <size>1.3863183137186321 0.03 2.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 0.6</ambient>
+            <diffuse>0.5 0.25 0 0.6</diffuse>
+          </material>
+        </visual>
+        <collision name="right_collision">
+          <geometry>
+            <box>
+              <size>1.3863183137186321 0.03 2.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0x02</collide_bitmask>
+            </contact>
+          </surface>
+        </collision>
+        <inertial>
+          <mass>50.0</mass>
+          <inertia>
+            <ixx>20.17041666666667</ixx>
+            <iyy>28.174493612298637</iyy>
+            <izz>8.011576945631965</izz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_joint" type="revolute">
+        <parent>world</parent>
+        <child>right</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.57</upper>
+          </limit>
+        </axis>
+        <pose>0.6981591568593161 0 0 0 0 0</pose>
+      </joint>
+      <plugin name="door" filename="libdoor.so">
+        <v_max_door>0.5</v_max_door>
+        <a_max_door>0.3</a_max_door>
+        <a_nom_door>0.15</a_nom_door>
+        <dx_min_door>0.01</dx_min_door>
+        <f_max_door>500.0</f_max_door>
+        <door name="digital_library_door" type="SwingDoor" left_joint_name="empty_joint" right_joint_name="right_joint" />
+      </plugin>
+    </model>
+    <include>
+      <name>libr_L1</name>
+      <uri>model://libr_L1</uri>
+      <pose>0 0 0.0 0 0 0</pose>
+    </include>
+    <rmf_charger_waypoints name="charger_waypoints">
+      <rmf_vertex name="start" x="19.77508654680369" y="-4.375456104788409" level="L1" />
+      <rmf_vertex name="start_2" x="13.37947364416973" y="-16.781673664526128" level="L1" />
+      <rmf_vertex name="stop" x="19.537647310913588" y="-24.8993679531165" level="L1" />
+    </rmf_charger_waypoints>
+  </world>
+</sdf>
