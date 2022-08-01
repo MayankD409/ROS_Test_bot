@@ -1,7 +1,7 @@
 # BadBot
 BadBot is a Differential drive robot based on ROS1. It has been tested with Ubuntu 20.04 and ROS noetic.
 
-#Setup BadBot Workspace
+# Setup BadBot Workspace
 
 ```
 cd ~/catkin_ws/src
