@@ -1,0 +1,366 @@
+<sdf version='1.7'>
+  <model name='BadBot'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.010539 0.150003 0.152056 0 -0 0</pose>
+        <mass>29.6869</mass>
+        <inertia>
+          <ixx>0.0123822</ixx>
+          <ixy>0.000223118</ixy>
+          <ixz>0.000103646</ixz>
+          <iyy>0.0129477</iyy>
+          <iyz>-0.00190386</iyz>
+          <izz>0.0220306</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__left_shaft_1_collision_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_shaft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__lidar_1_collision_2'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/lidar_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__right_shaft_1_collision_3'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/right_shaft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__left_shaft_1_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_shaft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__lidar_1_visual_2'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/lidar_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__right_shaft_1_visual_3'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/right_shaft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <self_collide>1</self_collide>
+      <gravity>1</gravity>
+      <self_collide>1</self_collide>
+      <self_collide>1</self_collide>
+      <self_collide>1</self_collide>
+    </link>
+    <joint name='Rev7' type='revolute'>
+      <pose relative_to='base_link'>-0.010481 0.035074 0.108665 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>caster_wheel_1</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='caster_wheel_1'>
+      <pose relative_to='Rev7'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0 -0 0 -0 0</pose>
+        <mass>1.40084</mass>
+        <inertia>
+          <ixx>0.000686</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000686</iyy>
+          <iyz>0</iyz>
+          <izz>0.000686</izz>
+        </inertia>
+      </inertial>
+      <collision name='caster_wheel_1_collision'>
+        <pose>0.010481 -0.035074 -0.108665 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/caster_wheel_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='caster_wheel_1_visual'>
+        <pose>0.010481 -0.035074 -0.108665 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/caster_wheel_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+    <joint name='Rev10' type='revolute'>
+      <pose relative_to='base_link'>-0.160481 0.226663 0.123665 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>left_wheel_1</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_wheel_1'>
+      <pose relative_to='Rev10'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0 -0 0 -0 0</pose>
+        <mass>0.3854</mass>
+        <inertia>
+          <ixx>0.000496</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000299</iyy>
+          <iyz>0</iyz>
+          <izz>0.000299</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_wheel_1_collision'>
+        <pose>0.160481 -0.226663 -0.123665 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_wheel_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='left_wheel_1_visual'>
+        <pose>0.160481 -0.226663 -0.123665 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_wheel_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+    <joint name='Rev8' type='revolute'>
+      <pose relative_to='base_link'>0.139519 0.226663 0.123665 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>right_wheel_1</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_wheel_1'>
+      <pose relative_to='Rev8'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0 -0 0 -0 0</pose>
+        <mass>0.3854</mass>
+        <inertia>
+          <ixx>0.000496</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000299</iyy>
+          <iyz>0</iyz>
+          <izz>0.000299</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_wheel_1_collision'>
+        <pose>-0.139519 -0.226663 -0.123665 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/right_wheel_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='right_wheel_1_visual'>
+        <pose>-0.139519 -0.226663 -0.123665 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/right_wheel_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+    <static>0</static>
+    <plugin name='control' filename='libgazebo_ros_control.so'/>
+  </model>
+</sdf>

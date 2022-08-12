@@ -1,4 +1,0 @@
-<launch>
-  <node pkg="badbot_teleop" type="badbot_teleop_key.py" name="badbot_teleop"  output="screen">
-  </node>
-</launch>
