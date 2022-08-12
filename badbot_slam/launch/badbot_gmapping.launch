@@ -1,0 +1,25 @@
+<launch>
+
+  <arg name="scan_topic" default="/scan"/>
+  <arg name="set_base_frame" default="base_link"/>
+  <arg name="set_odom_frame" default="odom"/>
+  <arg name="set_map_frame"  default="map"/>
+  <arg name="model" default="$(find BadBot_description)/urdf/BadBot.xacro"/>
+  <arg name="gui" default="true"/>
+  <arg name="rvizconfig" default="$(find badbot_slam)/rviz/badbot.rviz"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+  <param name="use_gui" value="$(arg gui)"/>
+  
+  <!-- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="badbot_slam_gmapping" output="screen">
+    <param name="base_frame" value="$(arg set_base_frame)"/>
+    <param name="odom_frame" value="$(arg set_odom_frame)"/>
+    <param name="map_frame"  value="$(arg set_map_frame)"/>
+    <rosparam command="load" file="$(find badbot_slam)/config/gmapping_params.yaml" />
+  </node>
+  
+  <!-- Rviz -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="rviz" pkg="rviz" args="-d $(arg rvizconfig)" type="rviz" required="true"/>
+</launch>
