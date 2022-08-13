@@ -23,7 +23,7 @@ def generate_launch_description():
         'rviz',
         'model.rviz')
     
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')    
+    use_sim_time = LaunchConfiguration('use_sim_time', default='false')    
     x_pose = LaunchConfiguration('x_pose', default='-2.0')
     y_pose = LaunchConfiguration('y_pose', default='-0.5')
     
@@ -35,7 +35,7 @@ def generate_launch_description():
         ),
         launch_arguments={
         'world': world,
-        'pause': 'true'
+        'pause': 'false'
         }.items()
     )
 
@@ -75,14 +75,14 @@ def generate_launch_description():
     	package='rviz2',
     	executable='rviz2',
     	name='rviz2',
-    	arguments=['-d', rviz_config_dir],
-        output='screen')
+   	arguments=['-d', rviz_config_dir],
+       output='screen') 
 
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_node,
         gazebo_server,
         gazebo_client,
-        urdf_spawn_node,
-        rviz_node
+        urdf_spawn_node
+        #rviz_node
     ])

@@ -26,8 +26,8 @@ def generate_launch_description():
     share_dir = get_package_share_directory('BadBot_description')
     
     urdf = os.path.join(share_dir, 'urdf', 'BadBot.urdf')
-    sdf = os.path.join(share_dir, 'models', 'BadBot.sdf')
-
+    sdf = os.path.join(share_dir, 'models', 'badbot' 'BadBot.sdf')
+	
     # Launch configuration variables specific to simulation
     x_pose = LaunchConfiguration('x_pose', default='0.0')
     y_pose = LaunchConfiguration('y_pose', default='0.0')

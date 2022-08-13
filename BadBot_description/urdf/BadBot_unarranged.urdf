@@ -7,12 +7,7 @@
   <material name="silver">
     <color rgba="0.700 0.700 0.700 1.000"/>
   </material>
-  
-<!-- =================================================================================== -->
-<!-- |                               Transmission of joints                            | -->
-<!-- =================================================================================== -->  
-  
-  <!-- <transmission name="Rev7_tran">
+  <transmission name="Rev7_tran">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="Rev7">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -22,7 +17,6 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  
   <transmission name="Rev8_tran">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="Rev8">
@@ -33,7 +27,6 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  
   <transmission name="Rev10_tran">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="Rev10">
@@ -43,12 +36,7 @@
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-  </transmission> -->
-  
-<!-- =================================================================================== -->
-<!-- |                              Material Configuration                             | -->
-<!-- =================================================================================== -->
-
+  </transmission>
   <gazebo reference="base_link">
     <material>Gazebo/Blue</material>
   </gazebo>
@@ -70,45 +58,45 @@
   <gazebo reference="lidar_1">
     <material>Gazebo/Red</material>
   </gazebo>
-  
-<!-- =================================================================================== -->
-<!-- |                                    Gazebo Plugins                               | -->
-<!-- =================================================================================== -->
-
-  <!-- ************** Diffrential drive plugin *************** -->
-  
   <gazebo>
     <plugin filename="libgazebo_ros_control.so" name="control"/>
   </gazebo>
   <gazebo>
-  <plugin name="wheel_drive_controller" filename="libgazebo_ros_diff_drive.so">
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
   <!-- wheels -->
-  <num_wheel_pairs>1</num_wheel_pairs>
-  <left_joint>Rev10</left_joint>
-  <right_joint>Rev8</right_joint>
-
-  <!-- kinematics -->
-  <wheel_separation>0.7</wheel_separation>
-  <wheel_diameter>1.2</wheel_diameter>
-  <max_wheel_torque>20.0</max_wheel_torque>
-  <max_wheel_acceleration>10.0</max_wheel_acceleration>
-
-  <!-- odometry  --> 
-  <odometry_frame>odom</odometry_frame>
-  <odometry_topic>odom</odometry_topic>
-  <command_topic>cmd_vel</command_topic>
-  <robot_base_frame>base_link</robot_base_frame>
-
-  <publish_odom>true</publish_odom>
-  <publish_odom_tf>true</publish_odom_tf>
-  <publish_wheel_tf>false</publish_wheel_tf>
-  <update_rate>30.0</update_rate>
+  <!-- Plugin update rate in Hz -->
+    <update_rate>30</update_rate>
+    <!-- Name of left joint, defaults to `left_joint` -->
+    <left_joint>Rev10</left_joint>
+    <!-- Name of right joint, defaults to `right_joint` -->
+    <right_joint>Rev8</right_joint>
+    <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+    <wheel_acceleration>1.0</wheel_acceleration>
+    <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+    <max_wheel_torque>20</max_wheel_torque>
+    <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+    <command_topic>cmd_vel</command_topic>
+    <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+    <odometry_topic>odom</odometry_topic>
+    <!-- Odometry frame, defaults to `odom` -->
+    <odometry_frame>odom</odometry_frame>
+    <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+    <robot_base_frame>base_link</robot_base_frame>
+    <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+    <odometry_source>1</odometry_source>
+    <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+    <publish_wheel_tf>true</publish_wheel_tf>
+    <!-- Set to true to publish transforms for the odometry, defaults to true -->
+    <publish_odom>true</publish_odom>
+    
+    <publish_odom_tf>false</publish_odom_tf>
+    <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+    <!-- publish_wheel_joint_state>true</publish_wheel_joint_state> -->
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <!-- <legacy_mode>false</legacy_mode> -->
   </plugin>
   </gazebo>
-  
-  <!-- ************** LIDAR plugin *************** -->
-  
   <gazebo reference="lidar_1">
     <sensor type="ray" name="ydlidar">
       <pose>0 0 0 0 0 0</pose>
@@ -144,11 +132,6 @@
       </plugin>
     </sensor>
   </gazebo>
-  
-<!-- =================================================================================== -->
-<!-- |                                    PHYSICS CONFIG                               | -->
-<!-- =================================================================================== -->
-  
   <gazebo reference="base_link">
     <mu1>0.2</mu1>
     <mu2>0.2</mu2>
@@ -185,18 +168,12 @@
     <mu2>0.2</mu2>
     <self_collide>true</self_collide>
   </gazebo>
-  
-<!-- =================================================================================== -->
-<!-- |                                    Base SETUP                                   | -->
-<!-- =================================================================================== -->
-  <!-- <link name="base_footprint"/> -->
   <link name="base_link">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.010480569242162507 0.14698117892049636 0.15180949497197077"/>
       <mass value="28.855052709016757"/>
       <inertia ixx="0.480495" ixy="-0.0" ixz="0.0" iyy="0.451805" iyz="-0.001119" izz="0.897614"/>
     </inertial>
-    
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -204,24 +181,13 @@
       </geometry>
       <material name="silver"/>
     </visual>
-    
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
-    
   </link>
-  
- <!-- <joint name="base_joint" type="fixed">
-      <parent>base_footprint</parent>
-      <child>base_link</child>
-      <pose>0.0 0.0 0.06 0 0 0</pose>
-    </joint> -->
-  
-  <!-- *********************** CASTER WHEEL ********************** -->
-  
   <link name="caster_wheel_1">
     <inertial>
       <origin rpy="0 0 0" xyz="4.307578375939425e-07 -4.657508867467186e-08 -1.1440255144601341e-07"/>
@@ -242,16 +208,6 @@
       </geometry>
     </collision>
   </link>
-  
-  <joint name="Rev7" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.010481 0.035074 0.108665"/>
-    <parent link="base_link"/>
-    <child link="caster_wheel_1"/>
-    <!-- <axis xyz="-0.0 -0.0 -1.0"/> -->
-  </joint>
-  
-  <!-- *********************** WHEELS ********************** -->
-  
   <link name="right_wheel_1">
     <inertial>
       <origin rpy="0 0 0" xyz="4.3075783662249734e-07 -3.580086045673614e-07 -1.1440259529982288e-07"/>
@@ -272,44 +228,6 @@
       </geometry>
     </collision>
   </link>
-  
-  <joint name="Rev8" type="continuous">
-    <origin xyz="-0.0475 0.0 0.0" rpy="0 0 0"/>
-    <parent link="right_shaft_1"/>
-    <child link="right_wheel_1"/>
-    <axis xyz="-1.0 0.0 0.0"/>
-  </joint>
-  
-  <link name="left_wheel_1">
-    <inertial>
-      <origin rpy="0 0 0" xyz="4.307578380380317e-07 -3.5800860437307236e-07 -1.1440259496675598e-07"/>
-      <mass value="0.38540002551002467"/>
-      <inertia ixx="0.000496" ixy="-0.0" ixz="-0.0" iyy="0.000299" iyz="0.0" izz="0.000299"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0.160481 -0.226663 -0.123665"/>
-      <geometry>
-        <mesh filename="file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.160481 -0.226663 -0.123665"/>
-      <geometry>
-        <mesh filename="file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  
-  <joint name="Rev10" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.0475 0.0 0.0"/>
-    <parent link="left_shaft_1"/>
-    <child link="left_wheel_1"/>
-    <axis xyz="-1.0 0.0 0.0"/>
-  </joint>
-  
-  <!-- *********************** WHEEL SHAFTS ********************** -->
-  
   <link name="right_shaft_1">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.04749956924216331 -3.5800860448409466e-07 -1.1440255119621323e-07"/>
@@ -330,13 +248,26 @@
       </geometry>
     </collision>
   </link>
-  
-  <joint name="Rigid9" type="fixed">
-    <origin rpy="0 0 0" xyz="0.187019 0.226663 0.123665"/>
-    <parent link="base_link"/>
-    <child link="right_shaft_1"/>
-  </joint>
-  
+  <link name="left_wheel_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="4.307578380380317e-07 -3.5800860437307236e-07 -1.1440259496675598e-07"/>
+      <mass value="0.38540002551002467"/>
+      <inertia ixx="0.000496" ixy="-0.0" ixz="-0.0" iyy="0.000299" iyz="0.0" izz="0.000299"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.160481 -0.226663 -0.123665"/>
+      <geometry>
+        <mesh filename="file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.160481 -0.226663 -0.123665"/>
+      <geometry>
+        <mesh filename="file:///home/mayank/BadBot/BadBot_ros2_ws/install/BadBot_description/share/BadBot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
   <link name="left_shaft_1">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.04749956924216181 -3.5800860459511696e-07 -1.1440255101580199e-07"/>
@@ -357,15 +288,6 @@
       </geometry>
     </collision>
   </link>
-  
-  <joint name="Rigid11" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.112981 0.226663 0.123665"/>
-    <parent link="base_link"/>
-    <child link="left_shaft_1"/>
-  </joint>
-  
-  <!-- *********************** LIDAR ********************** -->
-  
   <link name="lidar_1">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.010656431259226684 0.13581878088609403 0.001968639103403391"/>
@@ -386,7 +308,34 @@
       </geometry>
     </collision>
   </link>
-  
+  <joint name="Rev7" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.010481 0.035074 0.108665"/>
+    <parent link="base_link"/>
+    <child link="caster_wheel_1"/>
+    <axis xyz="-0.0 -0.0 -1.0"/>
+  </joint>
+  <joint name="Rev8" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.0475 0.0 0.0"/>
+    <parent link="right_shaft_1"/>
+    <child link="right_wheel_1"/>
+    <axis xyz="-1.0 0.0 0.0"/>
+  </joint>
+  <joint name="Rigid9" type="fixed">
+    <origin rpy="0 0 0" xyz="0.187019 0.226663 0.123665"/>
+    <parent link="base_link"/>
+    <child link="right_shaft_1"/>
+  </joint>
+  <joint name="Rev10" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.0475 0.0 0.0"/>
+    <parent link="left_shaft_1"/>
+    <child link="left_wheel_1"/>
+    <axis xyz="-1.0 0.0 0.0"/>
+  </joint>
+  <joint name="Rigid11" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.112981 0.226663 0.123665"/>
+    <parent link="base_link"/>
+    <child link="left_shaft_1"/>
+  </joint>
   <joint name="Rigid12" type="fixed">
     <origin rpy="0 0 0" xyz="-0.00469 0.156934 0.208463"/>
     <parent link="base_link"/>

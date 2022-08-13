@@ -1,5 +1,7 @@
+<?xml version="1.0" ?>
 <sdf version='1.7'>
-  <model name='BadBot'>
+  <model name='badbot'>
+    <link name="base_footprint"/>
     <link name='base_link'>
       <inertial>
         <pose>-0.010539 0.150003 0.152056 0 -0 0</pose>
@@ -309,6 +311,11 @@
         </dynamics>
       </axis>
     </joint>
+    <joint name="base_joint" type="fixed">
+      <parent>base_footprint</parent>
+      <child>base_link</child>
+      <pose>0.0 0.0 0.010 0 0 0</pose>
+    </joint>
     <link name='right_wheel_1'>
       <pose relative_to='Rev8'>0 0 0 0 -0 0</pose>
       <inertial>
@@ -362,5 +369,42 @@
     </link>
     <static>0</static>
     <plugin name='control' filename='libgazebo_ros_control.so'/>
+    <plugin name="badbot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+      <update_rate>30</update_rate>
+
+      <!-- wheels -->
+      <left_joint>Rev10</left_joint>
+      <right_joint>Rev8</right_joint>
+
+      <!-- kinematics -->
+      <wheel_separation>0.160</wheel_separation>
+      <wheel_diameter>0.066</wheel_diameter>
+
+      <!-- limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+      <command_topic>cmd_vel</command_topic>
+
+      <!-- output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>false</publish_wheel_tf>
+
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+
+    </plugin>
+    <plugin name="badbot_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
+      <ros>
+        <!-- <namespace>/tb3</namespace> -->
+        <remapping>~/out:=joint_states</remapping>
+      </ros>
+      <update_rate>30</update_rate>
+      <joint_name>Rev10</joint_name>
+      <joint_name>Rev8</joint_name>
+    </plugin>
   </model>
 </sdf>
